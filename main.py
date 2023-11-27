@@ -15,7 +15,6 @@ if (__name__ == "__main__" ):
     date = int(input ("Enter the date of the month: ")) #date variable
     day = str(daycalculator(date))                       #calling the dayCalculator function form functions file
     car_model = choice(list(Car.car_dict.keys()))
-    print(day.lower())
     if (day.lower() == "monday"  or day.lower() == "tuesday"):
         print ("its the start of the week and you can drive: ", car_model)
     elif (day.lower() == "wednesday" or day.lower() == "thursday"):
@@ -23,7 +22,7 @@ if (__name__ == "__main__" ):
     elif (day.lower() == "friday"):
         print ("its friday !! and you can drive: ", car_model)
     else:
-        print ("its weekend !!! and you can drive: ", car_model)
+        print (f"the day is {day} and its weekend !!! and you can drive: ", car_model)
 
 
 
