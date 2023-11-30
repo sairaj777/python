@@ -5,7 +5,7 @@ def daycalculator(date):
     dates = range(7)
     week_dictionary = dict(zip(dates, week))
     return week_dictionary[remainder]
-def duplicateTestor(importedString):               # function to test string duplicates
+def duplicateTestor(importedString):               # function to test sentence duplicates
     if (len(importedString) == len(set(importedString))):
         return False
     else:

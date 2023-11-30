@@ -5,11 +5,16 @@ from functions import *
 from class_file import Car
 from random import choice
 
+duplicateString =duplicateTestor( list(input("enter the string: ").split())) # importing the sentence to test duplicates
+print (duplicateString)
+
+
 lancer = Car("lancer","mistibushi",2016)
 jazz = Car("jazz","honda",2004)
 swift = Car("swift","maruthi",2011)
 
-print(__name__)
+
+
 
 if (__name__ == "__main__" ):
     date = int(input ("Enter the date of the month: ")) #date variable
