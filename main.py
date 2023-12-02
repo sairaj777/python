@@ -4,6 +4,11 @@
 from functions import *
 from class_file import Car
 from random import choice
+import socket
+
+
+hostname = socket.gethostbyaddr(input("provide the ip address: "))[0]
+print (f"the host name is {hostname}")
 
 duplicateString =duplicateTestor( list(input("enter the string: ").split())) # importing the sentence to test duplicates
 print (duplicateString)
